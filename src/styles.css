@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+.btnInfo {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 1px;
+    cursor: pointer;
+    } 

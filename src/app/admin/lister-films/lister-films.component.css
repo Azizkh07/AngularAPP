@@ -1,0 +1,12 @@
+.sup{
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 0.8em 1.8em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 1px;
+    cursor: pointer;
+}

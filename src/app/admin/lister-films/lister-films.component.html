@@ -1,0 +1,5 @@
+<div *ngFor="let f of tabFilms;let index=index;" >
+    <h4 >Nom du film : {{f.nom}}</h4>
+    <button class="sup" (click)="suppFilm(index)">supprimer</button>
+
+</div>

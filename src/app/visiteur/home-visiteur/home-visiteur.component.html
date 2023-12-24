@@ -1,0 +1,20 @@
+    <!-- <div *ngFor="let f of tabFilms;let index=index;" >
+        <h4 >Nom du film : {{tabFilms[index].nom}}</h4>
+        <div *ngIf="tabFilms[index].descVisible==true">            
+            <p>{{tabFilms[index].description}}</p>
+            <button class="btnInfo" (click)="cacherDesc(index)">Moins info</button>
+        </div>
+        <div *ngIf="tabFilms[index].descVisible==false">            
+            <button class="btnInfo" (click)="afficheDesc(index)">Plus info</button>
+        </div>
+
+    </div> -->
+
+    <div *ngFor="let f of tabFilms;let index=index;" >
+        <h4 >Nom du film : {{tabFilms[index].nom}}</h4>
+        <div *ngIf="tabFilms[index].descVisible">            
+            <app-detail-film [description]="tabFilms[index].description"></app-detail-film>
+        </div>
+            <button *ngIf="tabFilms[index].descVisible" class="btnInfo" (click)="cacherDesc(index)">Moins info</button>     
+            <button class="btnInfo" *ngIf="!tabFilms[index].descVisible" (click)="afficheDesc(index)">Plus info</button>
+        </div>
